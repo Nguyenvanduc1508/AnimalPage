@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.active {
+    background-color: #62f9a6;
+}
+form {
+    background-color: #b0f0cd;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-iner {
+    width: 300px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 50px 50px;
+    position: relative;
+    margin: 0 auto;
+}
+.form-iner h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.form-group {
+    display: block;
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-iner .form-group input {
+    display: block;
+    width: 89%;
+    padding: 10px 15px;
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    transition: 0.4;
+}
+
+.form-group input:focus {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+.error {
+    color: rgb(224, 12, 12);
+}
+.sublog {
+    padding: 10px 15px;
+    border: none;
+    background-color: #62f9a6;
+    width: 100%;
+    border-radius: 25px;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+.login-form {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #f1fdf6;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.login-form h2 {
+    font-size: 17px;
+    margin-right: 15px;
+    color: rgb(29, 165, 108);
+}
+.login-form button {
+    border-radius: 10px;
+    background-color: #62f9a6;
+    border: none;
+    padding: 7px 25px;
+    font-size: 14px;
+    color: #000;
+}
+.animal {
+    padding: 0 10px;
+    height: 100vh;
+    background-color: #f1fdf6;
+}
+.animal h2 {
+    text-align: center;
+    color: rgb(77, 197, 61);
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.animalpage {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.animalitem {
+    
+    width: calc((100% - 120px) / 5);
+    text-align: center;
+    margin: 0 10px 20px 10px;
+    border: 1px solid rgb(59, 151, 86);
+    border-radius: 10px;
+
+}
+.frames img {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    width: 100%;
+    height: 250px;
+}
+.frames p {
+    margin: 10px 0;
+}
+.panigation ul {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+
+}
+.pagination {
+    margin-bottom: 20px;
+}
+
+.pagination ul li a {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 7px 15px;
+    color: #000;
+    display: block;
+}
+.pagination button {
+    padding: 5px 20px;
+    margin: 10px 10px;
+}
+
+@media all and (max-width: 375px) {
+    form {
+        background-color: aliceblue;
+    }
+    .form-iner {
+        width: 100%;
+    }
+    .login-form button {
+        padding: 7px 10px;
+    }
+    .animalitem {
+        width: 100%;
+    }
+    .pagination button {
+        padding: 5px 10px;
+        margin: 0 10px;
+    }
+}
